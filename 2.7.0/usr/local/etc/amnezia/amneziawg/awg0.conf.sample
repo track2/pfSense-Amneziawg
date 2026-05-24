@@ -1,0 +1,19 @@
+[Interface]
+PrivateKey = <private key>
+#Address = YOU DON`T NEED TO SET IP HERE! Leave it commented
+# The values Jc, Jmin, Jmax, S1, S2, H1, H2, H3 and H4 are provided as examples (use your own):
+Jc = 101
+Jmin = 624
+Jmax = 872
+S1 = 26
+S2 = 71
+H1 = 1567704338
+H2 = 1859685220
+H3 = 1741308403
+H4 = 515687784
+
+[Peer]
+AllowedIPs = 0.0.0.0/0
+Endpoint = IP:PORT
+PersistentKeepalive = 60
+PublicKey = <public key>

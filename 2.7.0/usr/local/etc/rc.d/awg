@@ -1,0 +1,33 @@
+#!/bin/sh
+
+
+# PROVIDE: awg
+# REQUIRE: netif
+# BEFORE: routing
+# KEYWORD: shutdown
+
+. /etc/rc.subr
+
+name=awg
+rcvar=awg_enable
+
+start_cmd="awg_start"
+stop_cmd="awg_stop"
+
+
+awg_start()
+{
+  /sbin/ifconfig awg create
+  /usr/local/bin/awg setconf awg0 /usr/local/etc/amnezia/amneziawg/awg0.conf
+  /sbin/ifconfig awg0 inet <IP>/<net_bitmask> up
+}
+
+awg_stop()
+{
+  /sbin/ifconfig awg0 destroy
+}
+
+load_rc_config $name
+: ${awg_enable:=YES}
+
+run_rc_command "$1"

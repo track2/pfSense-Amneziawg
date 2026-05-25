@@ -139,9 +139,9 @@ Then add the service via **Services → Shellcmd → Add**:
 | Field | Value |
 |-------|-------|
 | Command | `service awg start` |
-| Type | `earlystart` ⚠️ |
+| Shellcmd Type | `earlyshellcmd` ⚠️ |
 
-> **Why `earlystart`?** If you select a later start type, pfSense will not find the `awg0` interface during interface assignment on reboot and will stuck.
+> **Why `earlyshellcmd`?** If you select a later start type, pfSense will not find the `awg0` interface during interface assignment on reboot and will stuck.
 >
 > This Shellcmd workaround is necessary because pfSense does not support autostart scripts via `/etc/rc.conf` the way standard FreeBSD does. The `rc.conf` on pfSense itself states: `# THIS FILE DOES NOTHING, DO NOT MAKE CONFIG CHANGES HERE`.
 

@@ -152,7 +152,7 @@ Go to **Interfaces → Assignments** and assign `awg0`.
 Configure the interface:
 - **Name:** e.g. `AWG0`
 - **IP type:** Static IPv4
-- **IP address / mask:** your tunnel address and subnet
+- **IP address / mask:** your tunnel address and subnet (e.g. `10.0.14.88/24`)
 - **Gateway:** e.g. `10.0.14.1` (will be created automatically)
 
 You can verify the gateway was created under **System → Routing**.

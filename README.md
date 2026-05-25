@@ -169,7 +169,7 @@ The tunnel is now configured. Further steps — such as routing policies, firewa
 
 ## Checksums
 
-Verify your binary files against the following MD5 checksums:
+MD5 checksums:
 
 | Version | `if_awg.ko` | `awg` | `amneziawg-go` |
 |---------|-------------|-------|----------------|

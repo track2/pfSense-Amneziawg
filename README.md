@@ -20,7 +20,7 @@ Copy the appropriate `if_awg.ko` for your pfSense version to `/boot/modules`.
 ### Step 2 — Set permissions
 
 ```sh
-chmod 755 /boot/modules/if_awg.ko
+chmod 555 /boot/modules/if_awg.ko
 ```
 
 ### Step 3 — Load and verify the module
